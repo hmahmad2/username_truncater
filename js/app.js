@@ -1,4 +1,4 @@
-function truncateHelper (str, num) {
+function truncateHelper(str, num) {
     if (str.length <= num) {
         return str;
     } else {
@@ -10,7 +10,7 @@ let user_orig;
 let user_num;
 let trunc;
 
-function truncate () {
+function truncate() {
     user_orig = document.getElementById('user').value;
     if (user_orig.length === 0) {
         alert("Please insert a valid username");
@@ -23,9 +23,15 @@ function truncate () {
     console.log(user_orig);
     console.log(user_num);
 
-    trunc = truncateHelper(user_orig, user_num);
-    document.getElementById('answer').innerHTML += trunc;
+    const func = truncateHelper(user_orig, user_num);
+    document.getElementById('answer').innerHTML = trunc;
+    // return func;
 }
+
+// function activateTruncate() {
+//     trunc = truncate();
+//     document.getElementById('answer').innerHTML = trunc;
+// }
 
 // var steve = "they call me failcop"
 
