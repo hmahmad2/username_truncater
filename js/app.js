@@ -12,21 +12,26 @@ let trunc;
 
 function truncate() {
     user_orig = document.getElementById('user').value;
-    if (user_orig.length === 0) {
+    if (user_orig === "") {
         alert("Please insert a valid username");
     }
     user_num = document.getElementById('num').value;
-    if (isNaN(user_num)) {
-        alert("Please insert a valid username length");
-    }
+    // if (isNaN(user_num)) {
+    //     alert("Please insert a valid username length");
+    // }
 
-    console.log(user_orig);
-    console.log(user_num);
+    // console.log(user_orig);
+    // console.log(user_num);
 
-    const func = truncateHelper(user_orig, user_num);
+    trunc = truncateHelper(user_orig, user_num);
     document.getElementById('answer').innerHTML = trunc;
     // return func;
 }
+
+// function truncate() {
+//     name = document.getElementById('user').value;
+//     console.log(name);
+// }
 
 // function activateTruncate() {
 //     trunc = truncate();
