@@ -1,9 +1,16 @@
-body {
+html {
     /* background-color: coral; */
     background-image: url(images/city_backdrop_night.jpeg);
-    width: 100%;
-    height: auto;
+    min-width: auto;
+    min-height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     color: cornsilk;
 }
+
+/* @media (max-width: 1366px) {
+    body {
+        /* height: 100%; */
+        /* width: auto; */
+    }
+} */
